@@ -1,0 +1,29 @@
+﻿<Window x:Class="Fitnes.ClientWindows.RootWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fitnes.ClientWindows"
+        mc:Ignorable="d"
+        Title="RootWindow" Height="517" Width="1043" MinHeight="517" MinWidth="1043">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="458*"/>
+            <ColumnDefinition Width="157*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="106*"/>
+            <RowDefinition Height="313*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="C:\Users\nikolja\source\repos\Fitnes\Fitnes\images\rat.jpg" />
+
+        <Label Content="Список клиентов" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
+               FontSize="25" FontWeight="Bold"/>
+
+        <Button Grid.Column="2" Content="+"/>
+
+        <Frame Grid.Row="1" Grid.ColumnSpan="3" Source="/Fitnes;component/Pages/ClientsPage.xaml" />
+    </Grid>
+</Window>
